@@ -1,2 +1,3 @@
-# Prettier TSLint + ESLint
-Default prettier configuration for react app
+# ESLint + Prettier + Typescript
+
+Default configuration for ESLint + Prettier + Typescript
