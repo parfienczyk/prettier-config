@@ -1,0 +1,32 @@
+{
+  "name": "eslint-prettier-typescript",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parfienczyk/eslint-prettier-typescript"
+  },
+  "author": "Karol Parfienczyk",
+  "scripts": {
+    "lint": "eslint 'src/**/*.{ts,tsx,js,jsx}'"
+  },
+  "dependencies": {
+    "typescript": "3.5.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "react",
+    "prettier",
+    "typescript",
+    "eslint"
+  ]
+}
