@@ -16,7 +16,7 @@ npm i -D eslint eslint-config-prettier eslint-config-react eslint-plugin-prettie
 
 
 
-### Preview of package.json
+### Preview of devDependecies in package.json
 
 ```js
   "devDependencies": {
@@ -29,6 +29,41 @@ npm i -D eslint eslint-config-prettier eslint-config-react eslint-plugin-prettie
     "eslint-plugin-react-hooks": "1.7.0",
     "prettier": "^1.18.2"
   },
+```
+
+Add two files in project (root level)
+
+```
+.eslintignore
+.eslintrc.json
+```
+
+And our file `eslintrc.js` should looks like this
+
+```js
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "env": {
+    "browser": true,
+    "jasmine": true,
+    "jest": true
+  },
+  "rules": {},
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser"
+}
 ```
 
 
@@ -50,3 +85,4 @@ For a good developer experience, it's useful to setup your editor to automatical
 "editor.formatOnSave":  true,
 "editor.formatOnPaste":  true,
 ```
+
